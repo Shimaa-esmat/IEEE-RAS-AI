@@ -1,0 +1,41 @@
+two type of data 
+  1-quantitative 
+    (numeric value allaw mathematic operation)
+  2-categorial
+     (set of item)
+**categorial
+1-ordered 
+  (are ranked)
+2-normal
+  (not have ranked order)
+**quantitative
+1-continuous
+   (can be spilt into smaller value)
+2-discrete
+   (are countable)
+--analyzing quantitative data 
+    *central 
+    *spread
+    *shape
+    *outliers
+**central
+three main measures 
+    mode
+       (the most frequent number)
+    median        
+       (middle value)
+    mean
+       (average)
+--natation--
+    (common math language to communicate)
+    capital letter "The notation for a random variable."
+    lowercase observed value("has subscript")
+    mean with natation
+--aggregation--
+    turn multiple number into fewer one "one number"
+    n
+    ∑xi
+    i=1
+    _     n
+    x  =  ∑xi 1/n
+          i=1
