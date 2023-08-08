@@ -1,0 +1,14 @@
+Binomial distribution
+**********************
+-binomial distribution is probability distribution that gives only two possible results 
+-number of possiable way that one probability could be
+   n!/(k!*(n-k)) --> n num of times repeated & k = num one of  probabilities appear
+-p(x) = n!/(k!*(n-k)) * p^k(1-p)^(n-k)
+
+Summary:
+*******
+we perform Binomial distribution with events have two outcomes
+using it to know if:
+-customer buy or not
+-transaction fraud or not
+-coin flip is head or tail
