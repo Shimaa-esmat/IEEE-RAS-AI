@@ -1,0 +1,17 @@
+Conditional Probability
+**********************
+-It is consider dependent Probability
+-It is expressed like this (frist|second) 
+-It is contain dependent and independent events
+-first event is dependent but second independent oon first one
+-calculating the probability of secand event p(S)
+   sum of its probability in all probabilities in firest one
+
+Summary:
+********
+p(S) = [p(S|F1)*p(F)]+[p(S|F2)*p(F)]
+
+
+Conditional Probability is different from Binomial distribution
+  second event in Conditional Probability dependent on firest event 
+  Binomial distribution secont event only dependent on its probability no matter how firest event was
