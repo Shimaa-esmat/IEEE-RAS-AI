@@ -1,0 +1,17 @@
+Bayes Rules
+
+*It allows us to update our belief or knowledge about an event based on new evidence or information.
+-given p(A) & p(*A)  --> prior probability
+-p(A,B) = p(A)*p(B|A) --> joiat
+-p(B) = p(A,B)+p(*A|B) --> normalier
+-p(A|B) = p(A,B) / P(B) --> Posterior
+
+It's equation
+ P(A|B) = (P(B|A) * P(A)) / P(B)
+ p(A,B) = P(B|A) * P(A)
+ p(B) = p(A,B)+p(*A,B)
+ 
+
+it used to reduce uncertainty like in robotics
+using sensor data and calculate more information give us more accurate value by using Bayes rules
+
