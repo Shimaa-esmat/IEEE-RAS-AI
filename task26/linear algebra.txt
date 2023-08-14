@@ -1,0 +1,83 @@
+linear algebra
+  -It's study of vectors, vector spaces and maping between vector spaces 
+  -using it to solve simultaneous equations and fitting data with an equation with fitting parameters
+  -need to understand how work with vectors and how to do calculus on them to find gradients and minima data
+  -in data sciense vectors are any thing describe object
+  -vector is something that are based on two rules 
+     *addition
+     *multiplication by scalar number
+**vector operation:
+  - adding
+  - multiply by scalar number
+  - size(absolute of vector (r.r)
+  -dot(inner) product
+  - cos rule and conclusion the dot product Geometric low
+  -vector projection 
+  -scaler projection
+  - basis vector (used to express any vector)
+ Basis is aset of n vectors that:
+  -are not linear combunations of each other (linearly independent)
+  -span the space
+  -the space is then n_dimensional
+ -linear independed
+ -linear combination
+ When a vector space has a finite basis, it is called a finite-dimensional vector space
+ using projections to look at one case of changes from basis to another
+**Matrices:
+ linear algebra is a mathematical system for maipulating vectors in spaces described by vectors
+ columns im matrix just read what it does to the unit vector along each axis 
+ Types of matrix transformation
+  -Iderntity matrix I
+  -Inversion matrix -I
+  -Mirror or reflection matrix
+  -shear matrix
+  -rotation matrix
+ combination of matrix transformations
+   matrixs are associative not commutative
+ inverse of matrix
+ -triangular matrix (below diagonal = 0)
+ if any row or culomns = 0 matrix = 0 -> there is no inverse
+**Einstein summation convention and the symmetry of the dot product:
+  square matrix and non_square matrix
+  Einstein summation convention abik = sum aij bjk (n of row frist matrix = n of culomns in other)
+  summation convention = the symmetry of the dot product
+Matrices changing basis
+  using inverse or dot product
+Orthogonal Matrices
+   is a real square matrix whose columns and rows are orthonormal vectors
+    its transpose is equal to its inverse matrix
+The Gram Schmidt process
+    used to transform a set of linearly independent vectors into a set of orthonormal vectors forming an orthonormal basis.
+ -Reflecting on a plane
+***Eigenproblems:
+ consists of the minimization of the maximum eigenvalue of an n × n matrix A(P) that depends affinely on a variable, subject to LMI (symmetric) constraint
+  take transform and see the vectoes who still laying on the same span
+Special eigen-cases
+  in uniform scaling (scale by same amount in each direction) any vector would be an eigenvector
+  if we take rotation -> has no eigenvector
+    it ha pure case non-zero bure rotation has at least some eigenvector (180 degree)
+  if laying on the same spans but just pointing in the opposite direction
+      all vector are an eigenvector and have eigenvalues of minus one 
+  combination of horizontal shear and vertical scalling 
+     it's less obvious than other 
+     has two eigenvector
+Calculating eigenvectors
+  det(A - λI) = 0
+change Eigenbasis:
+  T = CDC⁻
+  The resulting matrix t is now in its eigenbasis or diagonal form, with eigenvalues on the diagonal of d and     eigenvectors as columns of c
+
+PageRank
+  groundwork for further exploration and application of the algorithm in web analysis and search engine optimization
+ damping factor d
+  r(i+1) = d(lri)+1-d/n
+
+*the span of vectors is the set of their linear combination
+*Grid lines parallel and evenly spaced 
+*area of negative related to orientation-flipping
+*rank number of dimensions in the outbut
+*cross prodect AxB = |A||B|sin(0)(area)
+*duel vector
+*determinatant and eigenvectors don't care about the corrdinate system
+*axioms principles that are accepted as true without requiring formal proof
+  are an interface
