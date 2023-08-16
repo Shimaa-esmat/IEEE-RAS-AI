@@ -1,0 +1,72 @@
+machine learning 
+ it is a type of artificial intelligence that allows software applications to become more accurate in predicting outcomes without being explicitly programmed. 
+ it is the field of study that gives computers the ability to learn without being explicitly programmed.
+
+machine learning algorithms:
+ 1. supervised learning
+ 2. unsupervised learning
+ 3. recommender system
+ 4. reinforcement
+
+1. supervised learning
+  give learning algorithm examples to learn from. That includes the right answers, whereby right answer,
+ *regression
+    predict a number from infinitely many possible numbers
+ *classification
+    algorithms predict categories
+    predict only a small number of possible outputs or categories
+
+2. unsupervised learning
+  find some structure or some pattern or thing interesting in unlabeled data
+  learning algorithm, might decide that the data can be assigned to two different groups or two different clusters
+   *clustering algorithm
+     takes data without labels and tries to automatically group them into clusters
+     groups similar data points together
+   * anomaly detection
+      detect unusual events.
+      This turns out to be really important for fraud detection in the financial system
+   *dimensionality reduction.
+      This lets you take a big data-set and almost magically compress it to a much smaller data-set while losing as little information as possible
+     
+**Linear Regression
+    
+linear regression with one value (univariate):
+ 
+fw,b(x(i)) = wx+b
+
+ parameters:Depending on the values we get a different function f of x
+ --- cost function
+    tell us how well the model is doing so that we can try to get it to do better
+    prediction y hat i is close to the true target y^i  
+
+     *- The squared error cost function --> 1/2m * Summation of (fw,b(x(i)) - y(i))^2
+        The goal of linear regression is to find the parameters w or w and b that results in the smallest possible value for the cost function J
+
+   visualizing cost function  
+   cost function in 3d  (control the value of j by w&b
+    best value of w&b in the center of j curve (global)
+
+ --- gradient descent algorithm
+    use it to try to minimize any cost function J Not just the mean squared error cost function
+    J(w,b) not linear regression or square error cost 
+   
+      W&B = w&b +alf d J(w,b) /dw&b
+
+    Alpha is also called the learning rate.
+      The learning rate is usually a small positive number between 0 and 1 and it might be say, 0.01. 
+      it controls how big of a step
+   
+   taking baby steps until you get to the bottom of the value,
+   for the gradient descent algorithm, you're going to repeat W&B two update steps until the algorithm converges
+   the derivative term & Alpha help to get the smallest term
+     near to min aderivative become smaller and step 
+     can reach min without dectrasine alona
+     
+  -gradient has more than local variable but the squared error cost has only one(convex func has only global minimum)
+  -bach each step of gradient descent uses all of the training examples
+
+
+
+
+
+
