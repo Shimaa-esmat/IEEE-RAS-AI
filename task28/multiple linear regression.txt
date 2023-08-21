@@ -1,0 +1,76 @@
+multiple linear regression
+  xj = j feature (column)
+  n = num of feature
+  x^(i) = feature of j training example(row)
+    ->  ->  ->
+  f(x) = w . x + b
+
+
+vectorization
+   1. 
+       f = np.dot(w,x)+b
+     * it makes code shorter
+     * faster 
+       The NumPy dot function is able to use parallel hardware in your computer whatever using computer CPU or if you are using a GPU 
+       dot function makes it more efficient than the for loop or the sequential calculation
+
+
+Gradient descent for multiple linear regression
+  *cost func
+      J(w(vector),b)
+  * gradient descent
+      ->  ->         ->
+      W = w +alf d J(w,b)
+                     ->
+      B = b +alf d J(w,b) 
+    for multiple regression
+                          ->
+      Wn = Wn - a/m sum(f(x^(i) - y^(i))x^(i)n
+                        ->
+      b = b - a/m sum(f(x^(i) - y^(i))
+
+Normal equation
+  -only for linear regression
+  -solve w and b all without iterations
+  *this is not generalized to other learning algorithms
+  *quite slow if the number of features is large
+ shouldn't implement the normal equation by ypurself but if you're using a mature machine learning library that implement linear regression  
+ it'll be using this to solve for w and b.
+
+
+Feature scaling
+  if values of a feature is large,good model will learn to choose a small parameter value
+  if features that take on very different ranges of values, it can cause gradient descent to run slowly
+  rescaling the different features so they all take on comparable range of values. because speed, upgrade and dissent significantly
+Rescaling method
+*dividing each positive feature by its maximum value normalizes features to the range of 0 and 1(the new maximum range of the rescaled features is now 1 and all other rescaled values are less than 1).
+*Mean normalization: x^i(j) = (x - m)/(max-min) normalizes features to the range of -1 and 1
+*z-score using stander deviation (all features will have a mean of 0 and a standard deviation of 1)
+ using rescal in very large and small values
+
+
+Cheaking gradient sedcent
+  *learning curve relation between J(w,b) and iterations of w or b
+    -J should be decrease after every iterations if it increase we choose wrong a
+    -knowing when curve become stable and doesn't change
+    -Find out how many iterations gradient descent needs to converge 
+  *automatic convergence test
+    -e small number 0.001 or 10^-3
+    -If the cost J decreases by less than this number epsilon on one iteration declare convergence (w,b close to global min)
+
+
+Choosing the learning rate
+   If it's too small it will run very slowly and if it is too large it may not even converge
+   if plot of cost show that the costs sometimes goes up and sometimes goes down there is something wrong with learning rate
+   if curve increase we may use large a fix it by using smaller one or may using + with derivative term
+   with small enough a J should decrease on every iteration
+     if a is too small grdient descent take more iterations to converge
+
+
+Feature engineering
+ using intuition to design new feature by transforming or combining original feature
+
+
+Polynomial regression
+ linear regression can model complex, even highly non-linear functions using feature engineering 
+  choose correct relation to fit your data
