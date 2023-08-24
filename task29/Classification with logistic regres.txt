@@ -1,0 +1,30 @@
+Classification with logistic regression
+  *sigmoid function(logistic func)
+   g(z) = 1/(1+e^-z)
+
+ *logistic regression
+   f(x)w,b = g(z) 
+   it inputs feature X and outputs a number between 0 and 1
+ decision boundary 
+     divides feature into groups 
+
+*cost func &  loss func
+  Cost(f(x),y)= {−log(f(x))  if y = 1
+                 −log(1−(x)) if y = 0
+
+  Cost(f(x),y)=−ylog(f(x))−(1−y)log(1−f(x))
+
+*overfitting
+  give accurate predictions for training data but not for new data
+  machine learning aim to find a model that hopefully is neither underfitting nor overfitting
+   
+*regularization
+  reduce the size of parameters Wj
+
+Addressing overfitting 
+ -collect more data
+ -select feature
+ -regularization
+
+*Cost function with regularization
+   minimize cost function by adding a lambda term at the end of function
