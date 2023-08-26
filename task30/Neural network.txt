@@ -1,0 +1,20 @@
+Neural Network
+  algorithms that try to mimic the human brain
+   The larger the size of the neurons and the input data, the higher the performance
+
+ *logistic regression algorithm can be avery simplified model of signle neuron
+*layer one or group of neurons take similar input and return output(input &hidden layer)
+ 
+neural networks work
+ feature in input layer acces hidden layer which contain many logistic algorithms which do orders -> (activation vectors) then return outbut
+ activation vector output from previous layer and input to next one
+
+Inference applies knowledge from a trained neural network model and a uses it to infer a result
+forward propagation :doing operation  from left to right
+
+TensorFlow
+  TensorFlow platform helps to implement best practices for data, model tracking, performance monitoring, and model retraining
+  ts.tensor([[.7]],shape=(,),dytype = ) =np.array
+
+*dense func
+*sequential func
