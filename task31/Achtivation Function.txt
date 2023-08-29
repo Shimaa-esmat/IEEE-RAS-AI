@@ -1,0 +1,77 @@
+loss functions in tf
+  *binarycrossentropy for logistic 
+  *meansquarefunction for linear regression 
+  *sparsecatagoricalcrossentropy for softmax
+
+Achtivation Function
+  sigmod activation func
+  relu activation func(rectifier linear unit)
+  linear activation func (no activation function)
+
+Choose the activation function for the output layer
+     Depending on the output you want to predict
+    if it is 
+     *binary classification y(0/1) --> sigmoid 
+     *regression y(+/-) --> linear regression 
+     *regression y(+) --> relu
+  relu is the most commom choice in layers
+    faster to compute
+      flat only in only part 
+ in hidden layer don't use linear activation
+   it would become a giant linear regression model as (X*W1*W2*W3) + (b1*W2*W3 + b2*W3 + b3) simplified into (X*W) + B.
+   the hidden layers would be useless and the model will not learn any non-linear relationship in the data
+
+Adam algorithm
+ replacement optimization algorithm for stochastic gradient descent for training deep learning models
+  Determine the value of rate learning 
+
+convolutional layer
+  each neuron only looks at part of the previous layer's outputs
+  -faster computation
+  -need less training data less over fitting
+
+multiclass classification 
+  can take more 2 possible values
+ *softmax
+    it's a generalization of logistic regression that assigns decimal probabilities to each class in a multi-class problem
+    It is considered a general case for logistic regression
+    it isactivation function in the output layer	
+
+
+Diagnostic:
+ test that run to gain insight into what is or isn't work with learning algorithm    
+  it take time to implement but doing so well
+
+Evaluation model
+  split  data to train and test set to evaluation of model
+
+model selection 
+  choose the the model which case lower cost func
+
+choose good bais and algorithm make model better
+degree of polynomial and lambda value could control the regularization and bias variance
+Establishing a baseline level of performance
+ *human level
+ *competing algorithm
+ *guess based on experience
+
+if difference between baseline performance and Jtrain > (Jtrain - Jcv) high bais
+if difference between baseline performance and Jtrain < (Jtrain - Jcv) high variance
+
+Learning curve 
+ if learning algorithm suffers from high bais getting more training data won't help
+ if learning algorithm suffers from high variance getting more training data would help
+
+
+to improve model and make large error in predictions
+ *get more train examples  --> fix high variance
+ *smaller feature  --> fix high variance
+ *get additional feature --> fix high bais
+ *add polynomial feature  --> fix high bais
+ *decrease lambda  --> fix high bais
+ *increase lambda  --> fix high variance
+
+complex model (high variance)
+simple model (high bais)
+
+large neural network do as well or better than a smaller one so long as regularization is chosen appropriately
